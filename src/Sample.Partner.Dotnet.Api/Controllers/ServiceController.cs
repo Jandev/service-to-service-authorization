@@ -14,9 +14,9 @@ namespace Sample.Partner.Dotnet.Api.Controllers
 			const string clientSecret = "<The Client Secret created for the Partner App Registration>";
 			const string authority = "https://login.microsoftonline.com/<The tenant id where the applications are deployed to>";
 			
-			var scopes = new[] { "<The App ID URI of the DMM for Manufacturing solution>/.default" };
+			var scopes = new[] { "<The App ID URI of the backend solution>/.default" };
 
-			const string dmmEndpoint = "<The endpoint of DMM for Manufacturing that needs to be invoked.>";
+			const string dmmEndpoint = "<The endpoint of backend that needs to be invoked.>";
 
 			var app = ConfidentialClientApplicationBuilder.Create(clientId)
 				.WithClientSecret(clientSecret)
